@@ -1,0 +1,1402 @@
+# ─────────────────── OPENAI ───────────────────
+- name: OpenAI
+  company: openai
+  tagline: "started normal, ended in a parallel universe"
+  children:
+    - name: GPT Series
+      section: true
+      children:
+        - name: GPT-1
+          date: "Jun 2018"
+          tip: "<strong>117M parameters.</strong> 'Improving Language Understanding by Generative Pre-Training.' Nobody noticed."
+        - name: GPT-2
+          date: "Feb 2019"
+          tip: "<strong>1.5B parameters.</strong> OpenAI initially refused to release it, fearing misuse. Released in stages over 9 months."
+        - name: GPT-3
+          date: "Jun 2020"
+          tip: "<strong>175B parameters.</strong> First model available via API. Introduced the scientist-name size tiers."
+          children:
+            - name: Ada
+              dead: true
+              tip: "Smallest GPT-3 variant. Named after Ada Lovelace. Deprecated."
+            - name: Babbage
+              dead: true
+              tip: "Second-smallest GPT-3. Named after Charles Babbage. Deprecated."
+            - name: Curie
+              dead: true
+              tip: "Medium GPT-3. Named after Marie Curie. Deprecated."
+            - name: Davinci
+              dead: true
+              tip: "Largest GPT-3. Named after Leonardo da Vinci. The only one anyone used. Deprecated."
+            - name: Codex
+              dead: true
+              date: "Aug 2021"
+              tip: "<strong>GPT-3 fine-tuned on code.</strong> Powered GitHub Copilot. API model IDs like code-davinci-002. Discontinued in Mar 2023... then the name came back in 2025."
+            - name: InstructGPT
+              dead: true
+              date: "Jan 2022"
+              tip: "First RLHF-trained models. Included text-davinci-002 and text-davinci-003. The naming got weird fast."
+        - name: GPT-3.5
+          date: "Mar 2022"
+          note: "first '.5' version"
+          tip: "<strong>The original .5 release.</strong> Refined GPT-3 with better reasoning. Introduced the concept of half-versions to AI naming."
+          children:
+            - name: ChatGPT
+              date: "Nov 2022"
+              tip: "<strong>GPT-3.5-turbo under the hood.</strong> 100M users in 2 months. Not actually a model name. It's a product name wrapping a model name."
+            - name: gpt-3.5-turbo-0301
+              date: "Mar 2023"
+              tip: "First date-stamped snapshot. The -0301 means March 1st. This naming pattern continues to haunt us."
+            - name: gpt-3.5-turbo-0613
+              date: "Jun 2023"
+              tip: "Second snapshot. Function calling added."
+            - name: gpt-3.5-turbo-1106
+              date: "Nov 2023"
+              tip: "16K context. The date stamp format: MMDD. Not YYMM. Not ISO. MMDD."
+            - name: gpt-3.5-turbo-0125
+              date: "Jan 2024"
+              tip: "Final 3.5-turbo snapshot. 50% cheaper. Soon to be replaced by GPT-4o mini."
+        - name: GPT-4
+          date: "Mar 2023"
+          tip: "<strong>The flagship.</strong> Multimodal capabilities. Still the base version number for multiple parallel product lines years later."
+          children:
+            - name: GPT-4V
+              date: "Sep 2023"
+              note: '"V" for Vision'
+              tip: "Vision capabilities added. The suffix 'V' was used exactly once and never again."
+            - name: GPT-4 Turbo
+              date: "Nov 2023"
+              tip: "<strong>128K context, cheaper pricing.</strong> DevDay launch. Multiple preview snapshots before the stable release."
+              children:
+                - name: gpt-4-1106-preview
+                  date: "Nov 2023"
+                  tip: "First Turbo preview. The naming: gpt-4 (model) + 1106 (date) + preview (status)."
+                - name: gpt-4-0125-preview
+                  date: "Jan 2024"
+                  tip: "Second preview snapshot."
+                - name: gpt-4-turbo-2024-04-09
+                  date: "Apr 2024"
+                  tip: "Stable release. Now the date format changed to YYYY-MM-DD. Different from the MMDD format used in 3.5-turbo. Consistency!"
+            - name: GPT-4o
+              date: "May 2024"
+              note: '"o" = omni, not zero'
+              tip: "<strong>\"o\" stands for \"omni.\"</strong> Native multimodal model (text, audio, image). Not \"GPT-four-oh\" or \"GPT-four-zero.\" Omni. Everyone still calls it \"four oh.\""
+              children:
+                - name: GPT-4o mini
+                  date: "Jul 2024"
+                  tip: "<strong>Replaced GPT-3.5-turbo.</strong> 60% cheaper. Introduced the 'mini' suffix to GPT naming. The beginning of the size-suffix era."
+        - name: GPT-4.1
+          date: "Apr 2025"
+          note: "released AFTER GPT-5 was announced"
+          tip: "<strong>A model called 4.1 that exists after 5.</strong> Optimized for coding with 1M token context. Introduced 'nano' size tier. A separate product line from GPT-5."
+          children:
+            - name: GPT-4.1 mini
+              tip: "The mini variant. Mid-tier for the 4.1 line."
+            - name: GPT-4.1 nano
+              note: "first 'nano' in OpenAI"
+              tip: "Smallest 4.1 model. OpenAI borrowed 'nano' from Google's Gemini naming."
+        - name: GPT-5
+          date: "Aug 2025"
+          tip: "<strong>Router system with fast and reasoning modes.</strong> 400K context. 45% fewer hallucinations. $1.25/M input tokens."
+          children:
+            - name: GPT-5 Pro
+              tip: "Extended compute version for harder problems."
+        - name: GPT-5.1
+          date: "2025"
+          tip: "<strong>Refinement of GPT-5.</strong> Spawned its own Codex sub-family with three size tiers. Because one Codex wasn't enough."
+          children:
+            - name: GPT-5.1-Codex
+              note: "Codex is back from 2021"
+              tip: "<strong>Codex was discontinued in 2023.</strong> The zombie brand returns as a suffix."
+            - name: GPT-5.1-Codex-Mini
+              tip: "Small Codex. Because every product line needs a 'mini.'"
+            - name: GPT-5.1-Codex-Max
+              note: "not Pro, not Plus — Max"
+              tip: "<strong>'Max' is the new size tier.</strong> Apple uses 'Max' for chips. OpenAI uses it for code models. Words are running out."
+        - name: GPT-5.2
+          date: "2025"
+          tip: "<strong>Latest GPT generation.</strong> Now with Chat, Pro, and Codex sub-variants. Three product lines within a point release."
+          children:
+            - name: GPT-5.2 Chat
+              tip: "Chat-optimized variant. As if they weren't all chat models."
+            - name: GPT-5.2 Pro
+              tip: "Extended compute. 'Pro' now exists in GPT-5, GPT-5.2, and o3. Three different 'Pro' meanings."
+            - name: GPT-5.2-Codex
+              note: "Codex in 5.1 AND 5.2"
+              tip: "<strong>Codex appears in both 5.1 and 5.2.</strong> Two parallel Codex lines. The naming is fractal."
+        - name: GPT-5.3-Codex
+          date: "Jan 2026"
+          note: "most capable agentic coding model"
+          tip: "<strong>Combines Codex + GPT-5 training stacks.</strong> New industry highs on SWE-Bench Pro. ~25% faster than predecessors. The Codex zombie brand is now the flagship."
+          children:
+            - name: GPT-5.3-Codex-Spark
+              date: "Feb 2026"
+              note: "runs on Cerebras hardware"
+              tip: "<strong>Ultra-fast variant.</strong> 1000+ tokens/sec on Cerebras WSE-3 chips. 'Spark' is the new size tier. Not Mini, not Nano, not Max — Spark."
+    - name: Open Source
+      section: true
+      note: "OpenAI releasing open-source. yes, really."
+      collapsed: true
+      children:
+        - name: gpt-oss-120b
+          date: "2025"
+          note: "Apache 2.0 from OPENAI"
+          tip: "<strong>OpenAI's first open-source model.</strong> 120B params under Apache 2.0. The company that once refused to release GPT-2 now ships open weights."
+        - name: gpt-oss-20b
+          date: "2025"
+          tip: "Smaller open-source variant. Outperforms similarly sized open models on reasoning."
+    - name: o-Series
+      section: true
+      note: "entirely separate product line"
+      tip: "<strong>Reasoning models.</strong> A completely separate naming scheme from GPT. Uses just 'o' + number. No one knows what the 'o' stands for."
+      children:
+        - name: o1
+          date: "Sep 2024"
+          tip: "<strong>First reasoning model.</strong> Chain-of-thought visible in special 'thinking' blocks. Released as o1-preview initially."
+          children:
+            - name: o1-preview
+              tip: "Preview version. Uses 'preview' differently than GPT, which includes dates in the suffix."
+            - name: o1-mini
+              tip: "Smaller, cheaper reasoning model. Uses 'mini' like GPT-4o mini but in a different product line."
+            - name: o1 Pro Mode
+              date: "Dec 2024"
+              tip: "Extended reasoning for ChatGPT Pro ($200/month). 'Pro Mode' is not 'Pro' the model. It's 'Pro' the mode."
+        - name: o2
+          dead: true
+          note: "skipped, O2 is a British telecom"
+          tip: "<strong>Does not exist.</strong> Skipped because O2 (Telefónica) is a major European telecom brand."
+        - name: o3
+          date: "Apr 2025"
+          tip: "Jumped straight from o1 to o3. Because o2 was taken by a phone company."
+          children:
+            - name: o3-mini
+              date: "Jan 2025"
+              tip: "<strong>First reasoning model for free-tier users.</strong> Three effort levels: low, medium, high. Released before o3 itself."
+            - name: o3-pro
+              date: "Jun 2025"
+              tip: "Extended compute version. 'Pro' here means something different than GPT-5 Pro."
+        - name: o4-mini
+          date: "Apr 2025"
+          note: "there is no o4, only o4-mini"
+          tip: "<strong>There is no regular o4.</strong> Only o4-mini exists. The 'mini' came without the full version. Like releasing iPhone 16 mini without the iPhone 16."
+    - name: Media & Audio
+      section: true
+      collapsed: true
+      children:
+        - name: "DALL\xB7E"
+          date: "Jan 2021"
+          tip: "<strong>Text-to-image generation.</strong> Named as a portmanteau of WALL-E and Salvador Dal\xED."
+          children:
+            - name: "DALL\xB7E 2"
+              date: "Apr 2022"
+              tip: "Higher resolution, more realistic. Public beta Jul 2022."
+            - name: "DALL\xB7E 3"
+              date: "Sep 2023"
+              tip: "Better prompt following. Better hands. Integrated into ChatGPT."
+        - name: Sora
+          date: "Feb 2024"
+          tip: "<strong>Text-to-video.</strong> Up to 6 seconds initially. Named after the Japanese word for sky."
+          children:
+            - name: Sora 2
+              date: "Sep 2025"
+              tip: "15-25 second videos. Sound effects. iOS app. 'Cameo' feature."
+        - name: Whisper
+          date: "2022"
+          tip: "<strong>General-purpose speech recognition.</strong> Open-sourced. Relatively sane naming."
+          children:
+            - name: Whisper V2
+              date: "Dec 2022"
+            - name: Whisper V3
+              date: "Nov 2023"
+            - name: Whisper V3 Turbo
+              date: "Oct 2024"
+              tip: "'Turbo' suffix borrowed from GPT. The naming cross-pollination is real."
+        - name: GPT Audio
+          date: "2025"
+          tip: "<strong>Audio-native model.</strong> A separate model just for audio. Not Whisper. Not Sora. A third audio thing."
+          children:
+            - name: GPT Audio Mini
+              tip: "The mini variant. OpenAI now has 'mini' in GPT-4o, o1, o3, o4, and Audio. Five product lines."
+        - name: Jukebox
+          dead: true
+          date: "Apr 2020"
+          tip: "Music generation. Quietly forgotten."
+    - name: Embeddings
+      section: true
+      collapsed: true
+      children:
+        - name: text-embedding-ada-002
+          date: "Dec 2022"
+          tip: "Named after the GPT-3 'Ada' tier. Embedding models kept the scientist names longer than anyone."
+        - name: text-embedding-3-small
+          date: "Jan 2024"
+          tip: "Finally dropped the scientist names. 5x cheaper."
+        - name: text-embedding-3-large
+          date: "Jan 2024"
+          tip: "Best performance tier."
+
+# ─────────────────── GOOGLE ───────────────────
+- name: Google / DeepMind
+  company: google
+  tagline: "rebranded everything, renamed the tiers, skipped every other version"
+  children:
+    - name: The Alpha Saga
+      section: true
+      collapsed: true
+      note_dim: "at least these are consistent"
+      children:
+        - name: AlphaGo
+          date: "Oct 2015"
+          tip: "<strong>Defeated European Go champion Fan Hui.</strong> Started the 'Alpha' naming convention that DeepMind still uses a decade later."
+          children:
+            - name: AlphaGo Zero
+              date: "Oct 2017"
+              tip: "Self-taught from scratch, no human data. 'Zero' suffix = zero human data."
+            - name: AlphaZero
+              date: "Dec 2017"
+              tip: "Generalized to chess, shogi, and Go. Dropped the game-specific name."
+        - name: AlphaFold
+          date: "Dec 2018"
+          tip: "<strong>Protein structure prediction.</strong> Won CASP13."
+          children:
+            - name: AlphaFold 2
+              date: "Nov 2020"
+              tip: "Achieved lab-technique accuracy at CASP14. Open-sourced Jul 2021."
+            - name: AlphaFold 3
+              date: "May 2024"
+              tip: "Expanded to DNA, RNA, ligands."
+        - name: AlphaStar
+          date: "Jan 2019"
+          tip: "StarCraft II AI. Reached Grandmaster (top 0.2%)."
+        - name: AlphaCode
+          date: "2022"
+          tip: "Competitive programming. 54th percentile on Codeforces."
+        - name: AlphaTensor
+          date: "Oct 2022"
+          tip: "Discovered efficient matrix multiplication algorithms."
+        - name: AlphaDev
+          date: "Jun 2023"
+          tip: "Faster sorting and hashing algorithms."
+        - name: AlphaProof
+          date: "Jul 2024"
+          tip: "<strong>IMO silver medal (28/42 points).</strong> Combined with AlphaGeometry 2."
+        - name: AlphaGeometry
+          date: "Jan 2024"
+          tip: "Olympiad-level geometry."
+          children:
+            - name: AlphaGeometry 2
+              date: "Jul 2024"
+              tip: "Improved version used at IMO 2024."
+    - name: Language Models
+      section: true
+      note: "3 complete reboots"
+      children:
+        - name: LaMDA
+          dead: true
+          date: "May 2021"
+          tip: "<strong>Language Model for Dialogue Applications.</strong> 137B params. An engineer claimed it was sentient (Jun 2022). Not 'Lambda'. It's 'LaMDA.'"
+        - name: PaLM
+          dead: true
+          date: "Apr 2022"
+          tip: "<strong>Pathways Language Model.</strong> 540B params. 'PaLM' not 'Palm.'"
+          children:
+            - name: PaLM 2
+              dead: true
+              date: "May 2023"
+              tip: "Successor. Powered Bard and 25+ Google products. Four sizes with animal names."
+              children:
+                - name: Gecko
+                  dead: true
+                  tip: "Smallest PaLM 2. Light enough for mobile. This name is now extinct."
+                - name: Otter
+                  dead: true
+                  tip: "Second tier. Nobody remembers Otter existed."
+                - name: Bison
+                  dead: true
+                  tip: "Third tier. Also extinct."
+                - name: Unicorn
+                  dead: true
+                  tip: "Largest PaLM 2. Replaced by 'Ultra.'"
+            - name: Med-PaLM
+              dead: true
+              tip: "Medical variant. First AI to pass USMLE-style questions."
+              children:
+                - name: Med-PaLM 2
+                  dead: true
+                  date: "Mar 2023"
+                  tip: "Expert-level on USMLE. Later became Med-Gemini. The 'Med-' prefix survived the rebranding."
+        - name: Bard
+          dead: true
+          date: "Mar 2023"
+          note: "rebranded after 11 months"
+          tip: "<strong>Google's ChatGPT competitor.</strong> Launch demo error about James Webb Telescope wiped $100B from Google's market cap. Renamed to 'Gemini' in Feb 2024."
+        - name: Gemini 1.0
+          date: "Dec 2023"
+          tip: "<strong>Announced as successor to everything.</strong> Three tiers with completely new names."
+          children:
+            - name: Nano
+              tip: "On-device model. Shipped on Pixel 8 Pro. This tier name vanishes after 1.0."
+            - name: Pro
+              tip: "Mid-tier. Integrated into Bard on launch day."
+            - name: Ultra
+              date: "Feb 2024"
+              tip: "<strong>First to beat humans on MMLU (57 subjects).</strong> Required $20/month subscription. This tier name also mostly vanishes."
+        - name: Gemini 1.5
+          date: "Feb 2024"
+          note: "skipped 1.1 through 1.4"
+          tip: "<strong>1M token context window.</strong> Jumped from 1.0 to 1.5. The half-version era begins."
+          children:
+            - name: Pro
+              tip: "Generally available May 2024."
+            - name: Flash
+              note: "new tier appears"
+              tip: "<strong>'Flash' introduced as a new tier.</strong> Optimized for speed/efficiency. Ultra is gone. Flash is the new focus."
+            - name: Flash-8B
+              date: "Oct 2024"
+              note: "parameter count in name??"
+              tip: "<strong>Now parameter counts in the name.</strong> Smaller Flash variant. 8B = 8 billion. Gemini naming now includes: version + tier + parameter count."
+        - name: Gemini 2.0
+          date: "Dec 2024"
+          note: "skipped 1.6 through 1.9"
+          tip: "<strong>Experimental first, then GA.</strong> Flash-first launch. No Pro or Ultra."
+          children:
+            - name: Flash
+              tip: "Outperforms 1.5 Pro at 2x speed."
+            - name: Flash Thinking
+              date: "Dec 2024"
+              note: "reasoning mode v1"
+              tip: "<strong>Google's answer to o1.</strong> Shows step-by-step reasoning. Named 'Flash Thinking' here, then renamed to 'Deep Think' in 3.0."
+            - name: Flash Lite
+              tip: "Most cost-efficient. Better than 1.5 Flash at same cost."
+        - name: Gemini 2.5
+          date: "Mar 2025"
+          tip: "Continues the every-0.5-versions pattern."
+          children:
+            - name: Pro
+              tip: "'Most intelligent AI model yet' (at the time). Enhanced reasoning."
+            - name: Flash
+              date: "Apr 2025"
+              tip: "Hybrid reasoning model. Balance of speed, cost, intelligence."
+            - name: Flash-Lite
+              date: "Jun 2025"
+              tip: "Speed and cost optimized."
+            - name: Flash Image
+              date: "Aug 2025"
+              note: "leaked as \"Nano Banana\" \U0001F34C"
+              tip: "<strong>Leaked anonymously on LMArena as \"nano-banana.\"</strong> Sundar Pichai tweeted \U0001F34C\U0001F34C\U0001F34C. 23M new users, 500M images in 2 weeks. Name contains neither \"Nano\" nor \"Banana.\""
+        - name: Gemini 3
+          date: "Nov 2025"
+          note: "skipped 2.6 through 2.9"
+          tip: "<strong>Tops LMArena (1501 Elo).</strong> PhD-level reasoning."
+          children:
+            - name: Pro Preview
+              tip: "37.5% on Humanity's Last Exam, 91.9% on GPQA Diamond."
+            - name: Deep Think
+              date: "Dec 2025"
+              note: "was \"Flash Thinking,\" now \"Deep Think\""
+              tip: "<strong>Renamed reasoning mode.</strong> In 2.0 it was \"Flash Thinking.\" Now it's \"Deep Think.\" Feb 2026 update: solved 18 previously unsolved research problems, disproved a decade-old math conjecture. 48.4% on Humanity's Last Exam. Legendary Grandmaster on Codeforces."
+            - name: Flash
+              date: "Dec 2025"
+              tip: "Replaces Gemini 2.5 Flash."
+    - name: Open Models
+      section: true
+      collapsed: true
+      children:
+        - name: Gemma
+          date: "Feb 2024"
+          note: "sounds like Gemini, is not Gemini"
+          tip: "<strong>Open-source lightweight models.</strong> Built from Gemini tech but completely separate. The name similarity is actively confusing."
+          children:
+            - name: Gemma 2
+              date: "Jun 2024"
+              tip: "2B, 9B, 27B sizes."
+            - name: Gemma 3
+              date: "Mar 2025"
+              tip: "1B, 4B, 12B, 27B. 140+ languages."
+            - name: Gemma 3n
+              date: "Jun 2025"
+              note: "\"n\" for nano? for on-device?"
+              tip: "<strong>On-device variant.</strong> Runs on phones. The 'n' suffix is never explained. Not to be confused with Gemini Nano."
+    - name: Media
+      section: true
+      collapsed: true
+      children:
+        - name: Imagen
+          date: "May 2022"
+          tip: "<strong>Text-to-image diffusion model.</strong>"
+          children:
+            - name: Imagen 2
+              date: "Dec 2023"
+            - name: Imagen 3
+              date: "Aug 2024"
+            - name: Imagen 4
+              date: "May 2025"
+        - name: Veo
+          date: "May 2024"
+          tip: "<strong>Text-to-video.</strong> 1080p, 60+ seconds."
+          children:
+            - name: Veo 2
+              date: "Dec 2024"
+              tip: "4K resolution."
+            - name: Veo 3
+              date: "May 2025"
+              tip: "Added audio."
+        - name: MusicLM
+          dead: true
+          date: "Jan 2023"
+          note: "renamed twice"
+          tip: "Text-to-music. Became MusicFX, then Lyria."
+          children:
+            - name: MusicFX
+              dead: true
+              date: "2024"
+              tip: "First rename. New interface."
+            - name: Lyria
+              date: "Dec 2023"
+              tip: "Second rename. The model that stuck."
+              children:
+                - name: Lyria 2
+                  date: "May 2024"
+                - name: Lyria RealTime
+                  date: "2025"
+        - name: Genie 2
+          date: "Dec 2024"
+          tip: "<strong>World model.</strong> Interactive 3D environments. 1 min consistency."
+          children:
+            - name: Genie 3
+              date: "Aug 2025"
+              tip: "Real-time 24fps, 720p, several minutes."
+
+# ─────────────────── ANTHROPIC ───────────────────
+- name: Anthropic
+  company: anthropic
+  tagline: "poetry-themed tiers, jazz-improvised versioning"
+  children:
+    - name: Claude 1
+      date: "Mar 2023"
+      tip: "<strong>First Claude.</strong> Available to selected users only."
+      children:
+        - name: Claude Instant 1
+          dead: true
+          tip: "<strong>The fast tier before Haiku existed.</strong> 'Instant' was the budget option. Later replaced by Haiku."
+        - name: Claude Instant 1.2
+          dead: true
+          date: "Aug 2023"
+          tip: "Improved math and coding."
+    - name: Claude 2
+      date: "Jul 2023"
+      tip: "<strong>First publicly available Claude.</strong>"
+      children:
+        - name: Claude 2.1
+          date: "Nov 2023"
+          tip: "200K token context window."
+    - name: Claude 3
+      date: "Mar 2024"
+      tip: "<strong>Introduced the poetry tier system.</strong> Haiku (small) / Sonnet (medium) / Opus (large). Each named after a poetic form, ordered by length."
+      children:
+        - name: Haiku
+          tip: "<strong>Smallest, fastest.</strong> Named after the 3-line Japanese poem form. Short poem = small model."
+        - name: Sonnet
+          tip: "<strong>Balanced middle tier.</strong> Named after the 14-line poem. Medium poem = medium model."
+        - name: Opus
+          tip: "<strong>Largest, most capable.</strong> Named after a major musical/literary work. Big work = big model."
+    - name: Claude 3.5
+      date: "Jun 2024"
+      tip: "Half-version. Only Sonnet and Haiku shipped."
+      children:
+        - name: Sonnet
+          date: "Jun 2024"
+          tip: "<strong>Two versions with the same name.</strong> Original in June, updated in October. Model ID: claude-3-5-sonnet-20241022."
+          children:
+            - name: Sonnet (Oct update)
+              date: "Oct 2024"
+              tip: "Updated version. Same name. Different model ID date stamp. Introduced 'computer use' capability."
+        - name: Haiku
+          date: "Oct 2024"
+        - name: Opus
+          dead: true
+          note: "announced as a tier, never shipped"
+          tip: "<strong>Never shipped.</strong> Everyone expected Claude 3.5 Opus. It was listed as a tier. It never came out."
+    - name: Claude 3.6
+      dead: true
+      note: "does not exist"
+      tip: "<strong>Skipped.</strong> No 3.6 was ever released or announced."
+    - name: Claude 3.7 Sonnet
+      date: "Feb 2025"
+      note: "jumped 3.5 to 3.7, Sonnet only"
+      tip: "<strong>First hybrid reasoning model.</strong> Visible thinking. Only Sonnet. No Haiku, no Opus. Version 3.7 exists between 3.5 and 4."
+    - name: Claude 4
+      date: "May 2025"
+      tip: "Major version bump. No Haiku 4."
+      children:
+        - name: Sonnet 4
+          tip: "Mid-tier."
+        - name: Opus 4
+          tip: "Top-tier. Opus returns."
+        - name: Haiku 4
+          dead: true
+          note: "doesn't exist, jumps to 4.5"
+          tip: "<strong>No Haiku 4.</strong> Haiku skips from 3.5 to 4.5."
+    - name: Claude 4.5
+      date: "Sep 2025"
+      tip: "All three tiers return."
+      children:
+        - name: Sonnet 4.5
+          date: "Sep 2025"
+        - name: Haiku 4.5
+          date: "Oct 2025"
+          note_dim: "Haiku is back from the dead"
+        - name: Opus 4.5
+          date: "Nov 2025"
+    - name: Claude Opus 4.6
+      date: "Feb 2026"
+      note: "just Opus. no Sonnet, no Haiku."
+      tip: "<strong>Current model.</strong> 1M token context (beta). Introduces 'agent teams' — agents that spawn sub-agents. Found 500+ zero-day vulnerabilities during testing. Only Opus at this version. The tier system is now intermittent."
+
+# ─────────────────── DEEPSEEK ───────────────────
+- name: DeepSeek
+  company: deepseek
+  tagline: "Chinese lab that shook the industry with sports-car naming"
+  children:
+    - name: DeepSeek Coder
+      date: "Nov 2023"
+      tip: "<strong>Code-focused model.</strong> 1.3B to 33B params. Open-source."
+      children:
+        - name: DeepSeek Coder V2
+          date: "Jun 2024"
+          tip: "236B total params. Mixture of Experts."
+    - name: DeepSeek-V2
+      date: "May 2024"
+      tip: "<strong>236B params (21B active).</strong> MoE architecture. The 'V' prefix for the general model, 'R' for reasoning. At least it's a system."
+      children:
+        - name: DeepSeek-V2.5
+          date: "Sep 2024"
+          tip: "Merged chat and coder capabilities."
+    - name: DeepSeek-V3
+      date: "Dec 2024"
+      tip: "<strong>671B params (37B active).</strong> Trained for $5.6M, a fraction of what competitors spent."
+      children:
+        - name: DeepSeek-V3-0324
+          date: "Mar 2025"
+          note: "date-stamped snapshot"
+          tip: "Improved post-training pipeline with RL from R1. The date-stamp naming borrowed from OpenAI."
+        - name: DeepSeek-V3.1
+          date: "Aug 2025"
+          note: "hybrid V3 + R1"
+          tip: "<strong>Hybrid model combining V3 and R1.</strong> 671B params, 37B active. Hybrid 'thinking/non-thinking' modes. The V and R tracks merge."
+        - name: DeepSeek-V3.2
+          date: "2025"
+          tip: "<strong>Updated V3.</strong> Improved reasoning and coding."
+          children:
+            - name: DeepSeek-V3.2 Speciale
+              note: "Italian? in a Chinese model??"
+              tip: "<strong>'Speciale.'</strong> Not 'Special.' Speciale. With an 'e.' The Italian suffix on a Chinese model. Gold medals in 2025 IMO and IOI."
+    - name: DeepSeek-R1
+      date: "Jan 2025"
+      note: "named like a German sedan"
+      tip: "<strong>Reasoning model.</strong> Matched or exceeded OpenAI o1 at 95% lower cost. The 'R' = Reasoning. R1-Zero was trained with pure RL, no supervised fine-tuning."
+      children:
+        - name: R1-Zero
+          date: "Jan 2025"
+          tip: "<strong>Pure reinforcement learning.</strong> No supervised fine-tuning. 'Zero' suffix borrowed from DeepMind's AlphaGo Zero convention."
+        - name: R1-Distill-Qwen-1.5B
+          note: "the full model ID"
+          tip: "<strong>Distilled versions.</strong> R1 knowledge distilled into smaller models. Full names like R1-Distill-Qwen-1.5B. Other bases: Llama-8B, Qwen-7B, etc."
+        - name: R1-Distill-Llama-8B
+          tip: "Distilled into Meta's Llama 8B."
+        - name: R1-Distill-Qwen-32B
+          tip: "Distilled into Alibaba's Qwen 32B."
+    - name: Janus-Pro
+      date: "Jan 2025"
+      tip: "<strong>Multimodal model.</strong> Unified vision understanding and generation. Separate from the V/R naming tracks."
+    - name: DeepSeek-Prover
+      date: "Aug 2024"
+      tip: "<strong>Math theorem proving.</strong> Formal mathematics. Yet another naming track."
+      children:
+        - name: DeepSeek-Prover-V1.5
+          tip: "Improved version. Uses the 'V' prefix like the general models."
+
+# ─────────────────── META ───────────────────
+- name: Meta
+  company: meta
+  tagline: "changed the capitalization, changed the naming scheme, announced vaporware"
+  children:
+    - name: LLaMA
+      date: "Feb 2023"
+      note: "Large Language Model Meta AI, note the caps"
+      tip: "<strong>65B parameters.</strong> 'LLaMA' with specific capitalization because it's an acronym: Large Language Model Meta AI. This styling lasted one version."
+    - name: Llama 2
+      date: "Jul 2023"
+      note: "lowercase now, acronym abandoned"
+      tip: "<strong>Now just 'Llama'.</strong> A regular word. Partnership with Microsoft. Open-source."
+      children:
+        - name: Llama 2 7B
+          tip: "7 billion params."
+        - name: Llama 2 13B
+        - name: Llama 2 70B
+    - name: Llama 3
+      date: "Apr 2024"
+      tip: "<strong>8B and 70B.</strong> First multimodal capabilities."
+      children:
+        - name: Llama 3 8B
+        - name: Llama 3 70B
+        - name: Llama 3.1
+          date: "Jul 2024"
+          tip: "<strong>Added 405B, largest open model at the time.</strong>"
+          children:
+            - name: Llama 3.1 8B
+            - name: Llama 3.1 70B
+            - name: Llama 3.1 405B
+              tip: "<strong>405 billion parameters.</strong> Largest open-weight model at release."
+        - name: Llama 3.2
+          date: "Oct 2024"
+          note_dim: "first fully multimodal LLM from Meta"
+        - name: Llama 3.3
+          date: "Dec 2024"
+          tip: "70B only. Claimed 405B-level performance."
+    - name: Llama 4
+      date: "Apr 2025"
+      note: "parameter counts replaced by codenames"
+      tip: "<strong>New MoE architecture.</strong> Dropped parameter-count naming for military-style codenames. Because that's less confusing."
+      children:
+        - name: Scout
+          tip: "<strong>17B active / 109B total.</strong> 16 experts. 10M token context window (!)"
+        - name: Maverick
+          tip: "<strong>17B active / 400B total.</strong> 128 experts. 1M context."
+        - name: Behemoth
+          dead: true
+          note: "announced, never released"
+          tip: "<strong>288B active / ~2T total.</strong> 16 experts. Announced alongside Scout and Maverick but was 'still in training.' As of Feb 2026 it remains unreleased."
+    - name: LlamaGuard
+      date: "Dec 2023"
+      tip: "<strong>Safety classification model.</strong> Input/output content moderation. Not a chat model. A bouncer."
+      children:
+        - name: LlamaGuard 2
+          date: "Apr 2024"
+        - name: LlamaGuard 3
+          date: "Jul 2024"
+
+# ─────────────────── MISTRAL ───────────────────
+- name: Mistral AI
+  company: mistral
+  tagline: "welcome to the -stral cinematic universe"
+  children:
+    - name: Core Models
+      section: true
+      children:
+        - name: Mistral 7B
+          date: "Sep 2023"
+          tip: "<strong>Debut model.</strong> 7.3B params. Apache 2.0 license. Punched above its weight."
+        - name: Mixtral 8x7B
+          date: "Dec 2023"
+          note: "\"Mix\" + \"-tral.\" it begins."
+          tip: "<strong>Sparse Mixture-of-Experts.</strong> 8 experts \xD7 7B each. 6x faster inference. The portmanteau naming era begins."
+        - name: Mistral Small
+          tip: "Evolved through multiple versions."
+          children:
+            - name: Small v24.02
+              date: "Feb 2024"
+            - name: Small v24.09
+              date: "Sep 2024"
+            - name: Small 3.1
+              date: "Mar 2025"
+            - name: Small Creative
+              date: "2025"
+              note: "personality as a model variant"
+              tip: "<strong>'Creative' as a variant.</strong> Not a size. Not a speed. A vibe. Mistral is naming models by personality now."
+        - name: Mistral Medium
+          children:
+            - name: Medium 3
+              date: "May 2025"
+        - name: Mistral Large
+          children:
+            - name: Large
+              date: "Feb 2024"
+              tip: "First commercial model."
+            - name: Large 2
+              date: "Jul 2024"
+              tip: "123B dense, 128K context."
+            - name: Large 2.1
+              date: "Nov 2024"
+            - name: Large 3
+              date: "Dec 2025"
+    - name: "The -stral Universe"
+      section: true
+      note: "every product must end in -stral"
+      children:
+        - name: Codestral
+          date: "Jul 2024"
+          tip: "<strong>Code generation.</strong> Code + stral = Codestral."
+        - name: Codestral 2501
+          date: "Jan 2025"
+          tip: "Updated code model. The '2501' is a date: January 2025. Yet another date format."
+        - name: Pixtral 12B
+          date: "Sep 2024"
+          tip: "<strong>Vision model.</strong> Pix(el) + stral = Pixtral. ID: pixtral-12b-2409 (Sept 2024)."
+          children:
+            - name: Pixtral Large
+              date: "Nov 2024"
+              tip: "124B params. Large multimodal."
+        - name: Mathstral
+          date: "Jul 2024"
+          tip: "<strong>Math.</strong> Math + stral. You see the pattern."
+        - name: Ministral
+          date: "Oct 2024"
+          tip: "<strong>Edge/small models.</strong> Mini + stral."
+          children:
+            - name: Ministral 3B
+            - name: Ministral 8B
+        - name: Magistral
+          date: "Jun 2025"
+          tip: "<strong>Reasoning models.</strong> Magist(rate) + stral? Mag(nificent) + stral? Nobody knows."
+          children:
+            - name: Magistral Small
+            - name: Magistral Medium
+        - name: Devstral
+          date: "Dec 2025"
+          tip: "<strong>Developer-focused.</strong> Dev + stral."
+          children:
+            - name: Devstral 2
+            - name: Devstral Small 2
+        - name: Voxtral
+          date: "Sep 2024"
+          tip: "<strong>Voice model.</strong> Vox (voice) + stral. The suffix claims another domain."
+          children:
+            - name: Voxtral Small 24B
+              date: "Jul 2025"
+              tip: "Sized variant. Voxtral now has parameter counts too."
+            - name: Voxtral Mini Transcribe V2
+              date: "Feb 2026"
+              tip: "Batch transcription. 'Mini' + 'Transcribe' + 'V2.' Three modifiers on one -stral."
+            - name: Voxtral Realtime
+              date: "Feb 2026"
+              note: "~200ms latency"
+              tip: "<strong>Near real-time transcription.</strong> 13 languages. ~200ms latency. 'Realtime' as a variant name, not a feature."
+    - name: Le Chat
+      date: "Feb 2024"
+      note: "\"The Cat\" in French"
+      tip: "<strong>The chatbot interface.</strong> 'Le Chat' = 'The Cat' in French."
+
+# ─────────────────── MICROSOFT ───────────────────
+- name: Microsoft
+  company: microsoft
+  tagline: "makes models, funds OpenAI, trains on GPT-4, builds on Llama"
+  children:
+    - name: Phi Series
+      section: true
+      note_dim: "\"Small Language Models,\" not LLMs (they insist)"
+      children:
+        - name: Phi-1
+          date: "Jun 2023"
+          tip: "<strong>1.3B params.</strong> Python coding focus. Started the 'small but mighty' narrative."
+        - name: Phi-2
+          date: "Dec 2023"
+          tip: "2.7B params. General language understanding."
+        - name: Phi-3
+          date: "Apr 2024"
+          tip: "Family release."
+          children:
+            - name: Phi-3-mini
+              tip: "3.8B params."
+            - name: Phi-3-vision
+              date: "May 2024"
+              tip: "4.2B. First multimodal Phi."
+        - name: Phi-3.5
+          date: "Aug 2024"
+          children:
+            - name: Phi-3.5-vision
+        - name: Phi-4
+          date: "Dec 2024"
+          tip: "<strong>14B params.</strong> Focus on synthetic data."
+          children:
+            - name: Phi-4-mini-reasoning
+              note: "\u2190 this name"
+              tip: "<strong>The full name is 'Phi-4-mini-reasoning.'</strong> Model family + version + size tier + capability. Four concepts in one hyphenated name."
+            - name: Phi-4-reasoning
+              tip: "<strong>14B reasoning model.</strong> Outperforms o1-mini and DeepSeek-R1-Distill-Llama-70B. Trained on reasoning traces from o3-mini. Microsoft training on OpenAI's outputs. Again."
+            - name: Phi-4-reasoning-plus
+              note: "\u2190 this name also"
+              tip: "<strong>'Plus' as a size tier.</strong> Not 'large,' not 'pro,' not 'ultra.' Every company picks a different word."
+            - name: Phi-4-multimodal
+              date: "2025"
+              note: "5.6B, speech + vision + text"
+              tip: "<strong>Integrates speech, vision, and text in 5.6B params.</strong> Doing what 100B+ models do. The 'small but mighty' narrative continues."
+    - name: Orca
+      dead: true
+      date: "2023"
+      note: "trained on GPT-4 outputs"
+      tip: "<strong>Learned from GPT-4 reasoning traces.</strong> Microsoft trained a model on OpenAI's outputs."
+      children:
+        - name: Orca 2
+          dead: true
+          date: "Nov 2023"
+          tip: "Fine-tuned from Meta's LLaMA 2, using OpenAI's outputs as training signal."
+        - name: Orca 3
+          dead: true
+          date: "2024"
+          tip: "Post-trained Mistral-7B. Third different base model in three versions."
+    - name: WizardLM
+      dead: true
+      date: "Jul 2023"
+      note: "built on Meta's Llama"
+      tip: "<strong>Microsoft Research, but based on Meta's Llama.</strong> Evol-Instruct training."
+      children:
+        - name: WizardLM-2
+          dead: true
+          date: "Apr 2024"
+    - name: MAI-1
+      date: "2024"
+      note: "500B params, may not exist"
+      tip: "<strong>Announced under Mustafa Suleyman (ex-DeepMind).</strong> 500B parameters. Encountered training issues. As of Feb 2026, deployment status remains unclear."
+
+# ─────────────────── xAI ───────────────────
+- name: xAI
+  company: xai
+  tagline: "surprisingly normal naming. the bar is on the floor."
+  children:
+    - name: Grok-1
+      date: "Nov 2023"
+      tip: "<strong>Preview release.</strong> X Premium only. Named from Robert Heinlein's \"Stranger in a Strange Land.\" To grok = to understand deeply."
+      children:
+        - name: Grok-1 (open-source)
+          date: "Mar 2024"
+          tip: "Open-sourced under Apache 2.0."
+        - name: Grok-1.5
+          date: "Mar 2024"
+          tip: "Long context improvements."
+        - name: Grok-1.5 Vision
+          dead: true
+          note: "announced, never released"
+          tip: "<strong>Announced but never shipped.</strong>"
+    - name: Grok-2
+      date: "Aug 2024"
+      tip: "Improved reasoning and multimodal."
+      children:
+        - name: Grok-2 mini
+          tip: "The one small variant in the entire Grok line."
+    - name: Grok-3
+      date: "Feb 2025"
+      children:
+        - name: Grok-3 mini
+          tip: "Smaller reasoning variant. Even xAI has 'mini' now."
+    - name: Grok-4
+      date: "Jul 2025"
+      tip: "Flagship model."
+      children:
+        - name: Grok-4 Heavy
+          tip: "Extended compute variant. 'Heavy' as a size tier. Not Pro, not Max, not Ultra — Heavy. xAI chose a weight class."
+    - name: Grok-4.1
+      date: "Nov 2025"
+      tip: "<strong>Sequential numbers. That's it.</strong> The most readable naming in the entire industry."
+      children:
+        - name: Grok-4.1 Fast
+          tip: "Speed-optimized variant. Even xAI's simple naming is growing suffixes."
+
+# ─────────────────── AMAZON ───────────────────
+- name: Amazon
+  company: amazon
+  tagline: "corporate naming energy, but consistent"
+  children:
+    - name: Titan
+      dead: true
+      note_dim: "codename was \"Olympus\""
+      children:
+        - name: Titan Text Lite
+          date: "Nov 2023"
+        - name: Titan Text Express
+          date: "Nov 2023"
+        - name: Titan Text Embeddings V1
+          date: "Sep 2023"
+          children:
+            - name: Titan Text Embeddings V2
+              date: "2024"
+              tip: "Also called 'G1.' Version numbers AND generation numbers."
+        - name: Titan Multimodal Embeddings
+          date: "2024"
+    - name: Nova
+      date: "Dec 2024"
+      tip: "<strong>Launched at AWS re:Invent.</strong> Clean tiered naming. Formerly codenamed 'Olympus.'"
+      children:
+        - name: Nova Micro
+          tip: "Text only. Available immediately."
+        - name: Nova Lite
+          tip: "Multimodal. Available immediately."
+        - name: Nova Pro
+          tip: "Multimodal. Available immediately."
+        - name: Nova Premier
+          tip: "Announced for Q1 2025."
+        - name: Nova Canvas
+          tip: "Image generation."
+        - name: Nova Reel
+          tip: "Video generation."
+        - name: Nova Act
+          date: "Mar 2025"
+          tip: "<strong>Agentic model.</strong> Browser agent. Not a generation model, not a language model. An agent model."
+        - name: Nova Sonic
+          date: "Mar 2025"
+          tip: "<strong>Speech-to-speech.</strong> Low-latency voice. Amazon now has: Micro, Lite, Pro, Premier, Canvas, Reel, Act, Sonic. Eight sub-brands."
+        - name: Nova 2 Lite
+          date: "Dec 2025"
+          note: "generation 2 begins"
+          tip: "<strong>Nova generation 2.</strong> Beats Claude Haiku 4.5 on 13/15 benchmarks. The tier system resets with a new generation number."
+        - name: Nova 2 Pro
+          date: "Dec 2025"
+          tip: "Most intelligent Nova for complex multistep tasks. Currently in preview."
+        - name: Nova 2 Omni
+          date: "Dec 2025"
+          note: "text, images, video, speech \u2192 text, images"
+          tip: "<strong>Industry's first reasoning model processing text, images, video, AND speech.</strong> Generates text and images. 'Omni' borrowed from OpenAI. Again."
+        - name: Nova 2 Sonic
+          date: "Dec 2025"
+          tip: "<strong>Speech-to-speech with 1M token context.</strong> Multilingual. Amazon now has two generations \xD7 multiple tiers. The naming matrix expands."
+    - name: Nova Forge
+      date: "Dec 2025"
+      note: "not a model, a model forge"
+      tip: "<strong>Custom model customization platform.</strong> Access to pre-trained, mid-trained, and post-trained checkpoints. The name actually makes sense."
+
+# ─────────────────── STABILITY AI ───────────────────
+- name: Stability AI
+  company: stability
+  tagline: "Stable Diffusion and the open-source image generation empire"
+  collapsed: true
+  children:
+    - name: Stable Diffusion
+      date: "Aug 2022"
+      tip: "<strong>Open-source text-to-image.</strong> Democratized image generation."
+      children:
+        - name: SD 1.4
+          date: "Aug 2022"
+        - name: SD 1.5
+          date: "Oct 2022"
+          tip: "The workhorse. Most fine-tuned model in history."
+        - name: SD 2.0
+          date: "Nov 2022"
+          tip: "New text encoder. Community backlash over NSFW filtering."
+        - name: SD 2.1
+          date: "Dec 2022"
+        - name: SDXL
+          date: "Jul 2023"
+          note: "suddenly an acronym"
+          tip: "<strong>Stable Diffusion XL.</strong> Jumped from 2.1 to 'XL'. Not 3.0. Just... XL."
+        - name: SDXL Turbo
+          date: "Nov 2023"
+          tip: "Real-time generation. 'Turbo' borrowed from OpenAI's vocabulary."
+        - name: SD 3
+          date: "Feb 2024"
+          tip: "<strong>New architecture.</strong> Back to version numbers after the XL detour."
+          children:
+            - name: SD 3 Medium
+              date: "Jun 2024"
+            - name: SD 3.5
+              date: "Oct 2024"
+              children:
+                - name: SD 3.5 Large
+                - name: SD 3.5 Large Turbo
+                - name: SD 3.5 Medium
+    - name: Stable Audio
+      date: "Sep 2023"
+      tip: "Text-to-audio generation."
+      children:
+        - name: Stable Audio 2.0
+          date: "Apr 2024"
+    - name: Stable Video Diffusion
+      date: "Nov 2023"
+      tip: "Image-to-video."
+      children:
+        - name: SV4D 2.0
+          date: "2025"
+          note: "video \u2192 4D"
+          tip: "<strong>Video-to-4D diffusion.</strong> Novel-view video synthesis. 'SV4D' = Stable Video 4D. The abbreviation density increases."
+    - name: Stable LM
+      date: "Apr 2023"
+      tip: "<strong>Language models.</strong> Yes, the image company also makes LLMs."
+      children:
+        - name: Stable LM 2
+          date: "Jan 2024"
+        - name: Stable LM 2 12B
+          date: "2024"
+    - name: Stable Code
+      date: "Aug 2023"
+      tip: "Code completion model."
+
+# ─────────────────── APPLE ───────────────────
+- name: Apple
+  company: apple
+  tagline: "refused to participate in the naming arms race"
+  children:
+    - name: AFM-on-device
+      date: "Jun 2024"
+      note: "\"Apple Foundation Models.\" that's the name."
+      tip: "<strong>~3B parameters (pruned from 6.4B).</strong> Runs locally on iPhone/iPad/Mac. Apple's naming strategy: describe what it is, where it runs, and stop."
+    - name: AFM-server
+      date: "Jun 2024"
+      note: "that's the other name. they're done."
+      tip: "<strong>Larger model running on Apple's Private Cloud Compute.</strong> No version numbers. No tiers. No codenames. Just 'on-device' and 'server.'"
+    - name: Foundation Models (2025)
+      date: "Jun 2025"
+      tip: "<strong>Updated generation.</strong> Direct API access via Foundation Models framework. Still no fun names."
+
+# ─────────────────── ALIBABA / QWEN ───────────────────
+- name: "Alibaba / Qwen"
+  company: alibaba
+  tagline: "China's biggest cloud went open-source, versioned everything twice"
+  children:
+    - name: "Qwen (\u901A\u4E49\u5343\u95EE)"
+      date: "Aug 2023"
+      tip: "<strong>First generation.</strong> 7B, 14B, 72B parameters. Open-sourced. Name means 'understanding everything' in Chinese."
+      children:
+        - name: Qwen-7B
+        - name: Qwen-14B
+        - name: Qwen-72B
+    - name: Qwen-1.5
+      date: "Feb 2024"
+      tip: "<strong>Major update.</strong> 0.5B to 110B sizes. 29 languages."
+    - name: Qwen-2
+      date: "Jun 2024"
+      tip: "<strong>Architecture improvements.</strong> GQA, dual-chunk attention."
+      children:
+        - name: Qwen2-0.5B
+        - name: Qwen2-72B
+          tip: "Flagship. Competitive with Llama 3 70B."
+    - name: Qwen-2.5
+      date: "Sep 2024"
+      tip: "<strong>Over 100 model variants.</strong> Every combination of size and specialty."
+      children:
+        - name: Qwen2.5-72B
+        - name: Qwen2.5-Coder
+          tip: "Code-specialized."
+        - name: Qwen2.5-Math
+          tip: "Math reasoning."
+        - name: Qwen2.5-Max
+          date: "Jan 2025"
+          note: "MoE architecture"
+          tip: "<strong>MoE architecture.</strong> Competitive with GPT-4o and DeepSeek-V3."
+    - name: QwQ
+      date: "Nov 2024"
+      note: "reasoning model, completely different name"
+      tip: "<strong>Reasoning model.</strong> Separate from the Qwen numbering. Like OpenAI splitting GPT and o-series. 'QwQ' looks like a face."
+    - name: Qwen3
+      date: "Apr 2025"
+      tip: "<strong>Latest generation.</strong> Dense and MoE variants. Hybrid thinking modes."
+      children:
+        - name: Qwen3-235B-A22B
+          note: "MoE naming in the model ID"
+          tip: "<strong>235B total, 22B active.</strong> Name format: Qwen3 + total params + A(ctive) + active params."
+        - name: Qwen3-32B
+        - name: Qwen3-8B
+        - name: Qwen3-4B
+        - name: Qwen3-0.6B
+        - name: Qwen3-Max
+          date: "Sep 2025"
+          tip: "The MoE flagship."
+        - name: Qwen3-Omni
+          date: "Sep 2025"
+          note: "text, images, audio, video"
+          tip: "<strong>Multimodal everything.</strong> Generates text, images, audio, and video. 'Omni' borrowed from OpenAI's GPT-4o naming."
+        - name: Qwen3 Max Thinking
+          date: "Jan 2026"
+          note: "reasoning variant"
+          tip: "<strong>Reasoning mode for the Max model.</strong> 'Max' from the MoE line + 'Thinking' for reasoning. Alibaba's naming now has: version + size + architecture + capability."
+        - name: Qwen3 Coder Next
+          note: "'Next' is a tier now??"
+          tip: "<strong>'Next' as a variant name.</strong> Not V2, not Plus, not Pro. 'Next.' The word that means 'the one after this one.'"
+
+# ─────────────────── NVIDIA ───────────────────
+- name: NVIDIA
+  company: nvidia
+  tagline: "makes the GPUs everyone trains on, also ships their own models"
+  children:
+    - name: Nemotron
+      date: "Jun 2024"
+      tip: "<strong>NVIDIA's own LLM family.</strong> The name is unexplained. Nemo + tron? Nobody knows."
+      children:
+        - name: Nemotron-4 15B
+          date: "Mar 2024"
+        - name: Nemotron-4 340B
+          date: "Jun 2024"
+          tip: "<strong>340B dense model.</strong> Trained on 9T tokens."
+        - name: Llama-3.1-Nemotron-70B
+          date: "Oct 2024"
+          note: "NVIDIA's model built on Meta's Llama"
+          tip: "<strong>Fine-tuned Meta's Llama 3.1 70B.</strong> Three companies' worth of naming in one model ID: Meta (Llama) + version + NVIDIA (Nemotron) + size."
+        - name: Nemotron-H
+          date: "2025"
+          note: "hybrid architecture"
+          tip: "Hybrid model combining different architectures."
+        - name: Nemotron 3 Nano 30B-A3B
+          date: "2025"
+          note: "NVIDIA has 'Nano' too now"
+          tip: "<strong>30B total, 3B active MoE.</strong> Hybrid Mamba-Transformer architecture. 4x throughput of Nemotron 2 Nano. 1M token context."
+          children:
+            - name: Nemotron 3 Super
+              date: "H1 2026"
+              tip: "Mid-tier. Coming first half 2026."
+            - name: Nemotron 3 Ultra
+              note: "borrowed 'Ultra' from Google"
+              tip: "Largest Nemotron 3. 'Ultra' was Google's word first, but everyone shares the vocabulary now."
+        - name: Nemotron Nano 12B V2 VL
+          note: "vision-language variant"
+          tip: "<strong>12B vision-language model.</strong> Name has: brand + tier + size + version + capability. Five concepts in one name."
+        - name: Nemotron Speech
+          date: "2025"
+          note: "single-purpose ASR model"
+          tip: "<strong>10x faster speech recognition.</strong> Real-time, low-latency. A single-purpose model in a family of general-purpose ones."
+    - name: NVLM
+      date: "Oct 2024"
+      note: "another acronym"
+      tip: "<strong>NVIDIA Vision Language Models.</strong>"
+      children:
+        - name: NVLM-D-72B
+          tip: "72B decoder-only. The 'D' means decoder."
+
+# ─────────────────── IBM ───────────────────
+- name: IBM
+  company: ibm
+  tagline: "named their model after a rock"
+  children:
+    - name: Granite
+      date: "Sep 2023"
+      tip: "<strong>Enterprise LLM family.</strong> Named after a rock. Solid, reliable, boring. On-brand for IBM."
+      children:
+        - name: Granite 3.0
+          date: "Oct 2024"
+          children:
+            - name: Granite 3.0 2B
+            - name: Granite 3.0 8B
+        - name: Granite 3.1
+          date: "Dec 2024"
+        - name: Granite 3.2
+          date: "Feb 2025"
+          note: "added vision"
+          tip: "Added vision capabilities."
+        - name: Granite 3.3
+          date: "2025"
+        - name: Granite 4.0
+          date: "Nov 2025"
+          tip: "<strong>Uses 70%+ less memory than similar models.</strong> ISO 42001 certified. The only model family with a safety certificate."
+          children:
+            - name: Granite 4.0 Nano
+              date: "Oct 2025"
+              note: "350M and ~1B sizes"
+              tip: "<strong>Edge models.</strong> 350M and ~1B params. IBM borrowed 'Nano' from Google/OpenAI/NVIDIA. Everyone has Nano now."
+    - name: Granite Code
+      date: "May 2024"
+      tip: "Code-specialized Granite."
+      children:
+        - name: Granite Code 3B
+        - name: Granite Code 8B
+        - name: Granite Code 20B
+        - name: Granite Code 34B
+
+# ─────────────────── ZHIPU AI ───────────────────
+- name: "Zhipu AI (\u667A\u8C31)"
+  company: zhipu
+  tagline: "China's oldest AI lab, GLM everything"
+  collapsed: true
+  children:
+    - name: ChatGLM
+      date: "Mar 2023"
+      note: "GLM = General Language Model"
+      tip: "<strong>China's first ChatGPT competitor.</strong> Bilingual Chinese-English."
+      children:
+        - name: ChatGLM-6B
+          tip: "Open-sourced. Ran on a single GPU."
+        - name: ChatGLM2-6B
+          date: "Jun 2023"
+        - name: ChatGLM3-6B
+          date: "Oct 2023"
+    - name: GLM-4
+      date: "Jan 2024"
+      tip: "<strong>Flagship.</strong> Competitive with GPT-4 on Chinese benchmarks."
+      children:
+        - name: GLM-4-Plus
+        - name: GLM-4-Air
+          note: "speed tier"
+        - name: GLM-4-Flash
+          note: "also a speed tier"
+        - name: GLM-4-Long
+          note: "long context tier"
+        - name: GLM-4V
+          note: "\"V\" for Vision, borrowed from OpenAI"
+        - name: GLM-4.6V
+          note: "vision variant, version 4.6"
+          tip: "Vision model. The version jumped from 4 to 4.6. Because why not."
+        - name: GLM-4.7
+          date: "2025"
+          tip: "Point release between 4 and 5."
+          children:
+            - name: GLM-4.7 Flash
+              tip: "Speed-optimized variant. Everyone has a 'Flash' now."
+    - name: GLM-4.5
+      date: "Jul 2025"
+      tip: "Another decimal version between 4 and 5."
+      children:
+        - name: GLM-4.5 Air
+          tip: "Speed tier. Air, Flash, Long — Zhipu has three different speed tiers."
+        - name: GLM-4.5V
+          date: "Aug 2025"
+          note: "106B params"
+          tip: "<strong>106B vision-language model.</strong> The 'V' suffix continues from GLM-4V."
+    - name: GLM 4.6
+      date: "Sep 2025"
+      note: "trained on Huawei chips, zero NVIDIA"
+      tip: "<strong>Trained entirely on domestic Chinese chips.</strong> Zero NVIDIA dependency. The chip war shapes model naming."
+    - name: GLM-5
+      date: "Feb 2026"
+      tip: "<strong>~745B MoE, 44B active.</strong> Trained on Huawei Ascend chips. Released under MIT license. Zhipu's stock soared 34% on launch day. Went from 4 to 4.5 to 4.6 to 4.7 to 5 in one year."
+      children:
+        - name: GLM-OCR
+          date: "Feb 2026"
+          tip: "<strong>Compact OCR model.</strong> CogViT + GLM-0.5B encoder-decoder. A specialized model for document reading. The naming branches continue."
+
+# ─────────────────── MOONSHOT AI ───────────────────
+- name: "Moonshot AI (\u6708\u4E4B\u6697\u9762)"
+  company: moonshot
+  tagline: "China's long-context champion"
+  collapsed: true
+  children:
+    - name: Kimi
+      date: "Oct 2023"
+      note: "200K context at launch"
+      tip: "<strong>Launched with 200K token context.</strong> Longest context window at the time. Popular consumer chatbot in China."
+    - name: Kimi k1.5
+      date: "Jan 2025"
+      tip: "<strong>Reasoning model.</strong> Competitive with o1 and DeepSeek R1. Reinforcement learning on long chain-of-thought."
+    - name: Kimi-VL
+      date: "Apr 2025"
+      note: "vision-language spinoff"
+      tip: "<strong>16B MoE, 3B active.</strong> Vision-language model. Yet another naming track."
+      children:
+        - name: Kimi-VL-Thinking
+          date: "Jun 2025"
+          tip: "Reasoning variant of the vision model."
+    - name: Kimi-Dev
+      date: "Jun 2025"
+      note: "72B coding model, based on Qwen2.5"
+      tip: "<strong>Built on Alibaba's Qwen2.5-72B.</strong> A Chinese company building a coding model on another Chinese company's base model."
+    - name: Kimi K2
+      date: "Jul 2025"
+      note: "1T params, 32B active, open-sourced"
+      tip: "<strong>1 trillion total parameters.</strong> MoE with 32B active. Open-sourced under modified MIT. The lowercase 'k' became uppercase 'K.'"
+    - name: Kimi Linear
+      date: "Oct 2025"
+      note: "different architecture entirely"
+      tip: "<strong>48B MoE with 3B active.</strong> Uses 'Kimi Delta Attention' (KDA). Named after the architecture type. A third naming track."
+    - name: Kimi K2 Thinking
+      date: "Nov 2025"
+      tip: "<strong>Reasoning variant of K2.</strong> Trained for ~$4.6M. 256K context."
+    - name: Kimi K2.5
+      date: "Jan 2026"
+      note: "multimodal upgrade"
+      tip: "<strong>1T params with 400M-parameter MoonViT vision encoder.</strong> Processes images and video. Agent Swarm coordinates up to 100 specialized agents simultaneously. Beats GPT-5.2 on VideoMMMU."
+
+# ─────────────────── ALLEN AI ───────────────────
+- name: Allen AI (AI2)
+  company: allenai
+  tagline: "truly open-source, refreshingly simple naming"
+  collapsed: true
+  children:
+    - name: OLMo
+      date: "Feb 2024"
+      note: "Open Language Model"
+      tip: "<strong>Fully open-source.</strong> Training data, code, weights, everything. OLMo = Open Language Model."
+      children:
+        - name: OLMo 7B
+        - name: OLMo 2
+          date: "2024"
+          children:
+            - name: OLMo 2 7B
+            - name: OLMo 2 13B
+        - name: OLMo 3
+          date: "2025"
+          tip: "Third generation. Now with 'think' variants for reasoning."
+          children:
+            - name: OLMo 3 7B Instruct
+            - name: OLMo 3 7B Think
+              note: "reasoning variant"
+            - name: OLMo 3 32B Think
+              tip: "32B reasoning model."
+        - name: OLMo 3.1
+          date: "2025"
+          tip: "Point release."
+          children:
+            - name: OLMo 3.1 32B Instruct
+            - name: OLMo 3.1 32B Think
+    - name: OLMoE
+      date: "Sep 2024"
+      note: "MoE variant gets an E"
+      tip: "<strong>MoE OLMo.</strong> OLMo + E(xperts). 6.9B total, 1.3B active."
+    - name: Tulu
+      date: "2023"
+      tip: "<strong>Instruction-tuned OLMo.</strong>"
+      children:
+        - name: Tulu 2
+        - name: Tulu 3
+          date: "Nov 2024"
+    - name: Molmo
+      date: "Sep 2024"
+      note: "anagram of OLMo + M"
+      tip: "<strong>Multimodal OLMo.</strong> They rearranged the letters of OLMo + M(ultimodal)."
+      children:
+        - name: Molmo 2
+          date: "2025"
+          tip: "Updated multimodal model. The anagram lives on."
+
+# ─────────────────── PERPLEXITY ───────────────────
+- name: Perplexity
+  company: perplexity
+  tagline: "search engine that named its models after sound waves"
+  collapsed: true
+  children:
+    - name: Sonar
+      date: "2024"
+      tip: "<strong>Online models for search.</strong> Sonar = sound waves that find things. Like search."
+      children:
+        - name: Sonar Small Online
+          tip: "8B params. Real-time web search."
+        - name: Sonar Medium Online
+        - name: Sonar Large
+        - name: Sonar Pro
+          date: "Jan 2025"
+          tip: "Premier model for complex queries."
+        - name: Sonar Deep Research
+          date: "Feb 2025"
+          tip: "Agentic research. Searches hundreds of sources."
+    - name: R1-1776
+      date: "Feb 2025"
+      note: "DeepSeek R1 minus the censorship"
+      tip: "<strong>Post-trained DeepSeek R1.</strong> Removed Chinese government censorship. '1776' = American independence. That's the actual naming rationale."
+
+# ─────────────────── MINIMAX ───────────────────
+- name: MiniMax
+  company: minimax
+  tagline: "named after the optimization algorithm, model called 'abab'"
+  collapsed: true
+  children:
+    - name: abab
+      date: "2023"
+      note: "the model is literally called 'abab'"
+      tip: "<strong>Original model series.</strong> Not an acronym. Just 'abab.'"
+      children:
+        - name: abab-5.5
+          date: "2024"
+        - name: abab-6.5
+          date: "2024"
+    - name: MiniMax-01
+      date: "Jan 2025"
+      tip: "<strong>456B MoE.</strong> 4M token context. Dropped the 'abab' naming."
+    - name: MiniMax-M1
+      date: "2025"
+      note: "reasoning model"
+      tip: "Reasoning model. Switched to yet another naming scheme."
+    - name: MiniMax M2.1
+      date: "2025"
+      tip: "<strong>Dropped the hyphen.</strong> Was 'MiniMax-M1' with a hyphen. Now 'MiniMax M2.1' with a space. Third naming scheme in three releases."
+    - name: MiniMax M2.5
+      date: "2025"
+      tip: "Latest MiniMax model. From 'abab' to 'MiniMax-01' to 'M1' to 'M2.5.' Four naming conventions in two years."
+    - name: MiniMax M2-her
+      date: "2025"
+      note: "persona variant??"
+      tip: "<strong>'her.'</strong> A model variant called 'her.' Like the Scarlett Johansson movie. Make of that what you will."
+
