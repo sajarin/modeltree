@@ -1,8 +1,8 @@
-# The Absolute State of AI Model Names
+# A Tree of AI Model Names
 
-A community-maintained catalog of major AI model names, versions, and naming crimes committed by the industry.
+An interactive tree of every major AI model name, version, and naming crime committed by the industry.
 
-Published at [sajarin.com/blog/modelnames](https://sajarin.com/blog/modelnames/).
+Published at [sajarin.com/blog/modeltree](https://sajarin.com/blog/modeltree/).
 
 ## Contributing
 
