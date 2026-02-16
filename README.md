@@ -17,12 +17,12 @@ Each company is a top-level entry:
   children:
     - name: Model Name
       date: "Month Year"      # always quoted
+      url: https://example.com # announcement or blog post link
       tip: "<strong>Bold text.</strong> Tooltip shown on hover."  # always quoted, supports HTML
       note: "red annotation"
       note_dim: "gray annotation"
       dead: true              # strikethrough for discontinued models
       section: true           # uppercase label for grouping
-      collapsed: true         # collapsed by default
       children:               # nested models
         - name: Sub-model
 ```
@@ -33,7 +33,6 @@ Each company is a top-level entry:
 - `tip` values must be quoted (they contain HTML)
 - Use `dead: true` for discontinued/unreleased models
 - Use `section: true` for category headers (e.g., "GPT Series", "The -stral Universe")
-- Use `collapsed: true` for sections that should start folded
 - Every name listed must be real
 
 ## Files
@@ -42,7 +41,6 @@ Each company is a top-level entry:
 |------|---------|
 | `models.yaml` | All model data — the only file contributors edit |
 | `model-tree.js` | Web component that renders the tree |
-| `index.html` | Blog post (fetches YAML from this repo at runtime) |
 
 ## License
 
