@@ -181,7 +181,7 @@
     - name: Open Source
       section: true
       note: "OpenAI releasing open-source. yes, really."
-      collapsed: true
+
       children:
         - name: gpt-oss-120b
           date: "Aug 2025"
@@ -236,7 +236,7 @@
           tip: "<strong>There is no regular o4.</strong> Only o4-mini exists. The 'mini' came without the full version. Like releasing iPhone 16 mini without the iPhone 16."
     - name: Media & Audio
       section: true
-      collapsed: true
+
       children:
         - name: "DALL\xB7E"
           date: "Jan 2021"
@@ -291,7 +291,7 @@
           tip: "Music generation. Quietly forgotten."
     - name: Embeddings
       section: true
-      collapsed: true
+
       children:
         - name: text-embedding-ada-002
           date: "Dec 2022"
@@ -313,7 +313,7 @@
   children:
     - name: The Alpha Saga
       section: true
-      collapsed: true
+
       note_dim: "at least these are consistent"
       children:
         - name: AlphaGo
@@ -516,7 +516,7 @@
               tip: "Replaces Gemini 2.5 Flash."
     - name: Open Models
       section: true
-      collapsed: true
+
       children:
         - name: Gemma
           date: "Feb 2024"
@@ -539,7 +539,7 @@
               tip: "<strong>On-device variant.</strong> Runs on phones. The 'n' suffix is never explained. Not to be confused with Gemini Nano."
     - name: Media
       section: true
-      collapsed: true
+
       children:
         - name: Imagen
           date: "May 2022"
@@ -1242,7 +1242,7 @@
 - name: Stability AI
   company: stability
   tagline: "Stable Diffusion and the open-source image generation empire"
-  collapsed: true
+
   children:
     - name: Stable Diffusion
       date: "Aug 2022"
@@ -1552,7 +1552,7 @@
 - name: "Zhipu AI (\u667A\u8C31)"
   company: zhipu
   tagline: "China's oldest AI lab, GLM everything"
-  collapsed: true
+
   children:
     - name: ChatGLM
       date: "Mar 2023"
@@ -1632,7 +1632,7 @@
 - name: "Moonshot AI (\u6708\u4E4B\u6697\u9762)"
   company: moonshot
   tagline: "China's long-context champion"
-  collapsed: true
+
   children:
     - name: Kimi
       date: "Oct 2023"
@@ -1682,7 +1682,7 @@
 - name: Allen AI (AI2)
   company: allenai
   tagline: "truly open-source, refreshingly simple naming"
-  collapsed: true
+
   children:
     - name: OLMo
       date: "Feb 2024"
@@ -1752,7 +1752,7 @@
 - name: Perplexity
   company: perplexity
   tagline: "search engine that named its models after sound waves"
-  collapsed: true
+
   children:
     - name: Sonar
       date: "Jan 2025"
@@ -1784,7 +1784,7 @@
 - name: MiniMax
   company: minimax
   tagline: "named after the optimization algorithm, model called 'abab'"
-  collapsed: true
+
   children:
     - name: abab
       date: "2023"
