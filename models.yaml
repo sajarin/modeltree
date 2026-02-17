@@ -703,11 +703,19 @@
         - name: Opus 4.5
           date: "Nov 2025"
           url: "https://www.anthropic.com/news/claude-opus-4-5"
-    - name: Claude Opus 4.6
+    - name: Claude 4.6
       date: "Feb 2026"
-      note: "just Opus. no Sonnet, no Haiku."
       url: "https://www.anthropic.com/news/claude-opus-4-6"
-      tip: "<strong>Current model.</strong> 1M token context (beta). Introduces 'agent teams' — agents that spawn sub-agents. Found 500+ zero-day vulnerabilities during testing. Only Opus at this version. The tier system is now intermittent."
+      tip: "1M token context (beta). Tier system remains intermittent."
+      children:
+        - name: Opus 4.6
+          date: "Feb 2026"
+          url: "https://www.anthropic.com/news/claude-opus-4-6"
+          tip: "<strong>Opus shipped first.</strong> Introduces 'agent teams' — agents that spawn sub-agents. Found 500+ zero-day vulnerabilities during testing."
+        - name: Sonnet 4.6
+          date: "Feb 2026"
+          url: "https://www.anthropic.com/news/claude-sonnet-4-6"
+          tip: "<strong>Sonnet catches up.</strong> Same pricing as Sonnet 4.5 ($3/$15 per million tokens). Users preferred it over Opus 4.5 ~59% of the time. Enhanced coding, computer use, and long-context reasoning."
 
 # ─────────────────── DEEPSEEK ───────────────────
 - name: DeepSeek
