@@ -1163,6 +1163,9 @@
           date: "Nov 2025"
           url: "https://x.ai/news/grok-4-1"
           tip: "Speed-optimized variant. Even xAI's simple naming is growing suffixes."
+    - name: Grok-4.20
+      date: "Feb 2026"
+      tip: "<strong>From 4.1 to 4.20.</strong> Skipped 18 versions — or just picked the weed number. Either way, xAI's 'surprisingly normal naming' streak is over. Beta features a 4-agent collaboration system."
 
 # ─────────────────── AMAZON ───────────────────
 - name: Amazon
